@@ -39,39 +39,15 @@ class MakeSeederCommand extends GeneratorCommand
         return __DIR__.'/stubs/seeder.stub';
     }
 
-    /**
-     * Get the destination class path.
+       /**
+     * Get the default namespace for the class.
      *
-     * @param string $name
-     *
-     * @return string
-     */
-    protected function getPath($name)
-    {
-        return module_path($this->argument('slug'), 'Database/Seeds/'.$name.'.php');
-    }
-
-    /**
-     * Parse the name and format according to the root namespace.
-     *
-     * @param string $name
+     * @param string $rootNamespace
      *
      * @return string
      */
-    protected function parseName($name)
+    protected function getDefaultNamespace($rootNamespace)
     {
-        return $name;
-    }
-
-    /**
-     * Replace namespace in seeder stub.
-     *
-     * @param string $name
-     *
-     * @return string
-     */
-    protected function getNamespace($name)
-    {
-        return module_class($this->argument('slug'), 'Database\Seeds');
+        return module_class($this->argument('slug'), 'Database\\Seeds');
     }
 }
