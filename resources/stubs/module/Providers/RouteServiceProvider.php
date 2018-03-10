@@ -66,8 +66,10 @@ class RouteServiceProvider
     {
         global $app;
 
-        $app->router->group(['namespace' => $this->namespace, 'prefix' => 'api'], function ($router) {
-            require module_path('DummySlug', 'Routes/api.php');
+        $app->api->version('DummyVersion', function ($api) {
+            $api->group(['namespace'  => $this->namespace, 'prefix' => 'DummySlug'], function ($api) {
+                require module_path('DummySlug', 'Routes/api.php');
+            });
         });
     }
 }

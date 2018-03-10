@@ -68,6 +68,7 @@ return [
 
     'pathMap' => [
         'Database'          => 'Database',
+        'Events'            => 'Events',
         'Http'              => 'Http',
         'Providers'         => 'Providers',
         'Models'            => 'Models',

@@ -98,6 +98,7 @@ class MakeModuleCommand extends Command
         $this->container['description'] = $this->ask('Please enter the description of the module:', $this->container['description']);
         $this->container['basename'] = studly_case($this->container['slug']);
         $this->container['namespace'] = config('modules.namespace').$this->container['basename'];
+        $this->container['root'] = app()->getNamespace();
 
         $this->comment('You have provided the following manifest information:');
         $this->comment('Name:                       '.$this->container['name']);
@@ -106,6 +107,7 @@ class MakeModuleCommand extends Command
         $this->comment('Description:                '.$this->container['description']);
         $this->comment('Basename (auto-generated):  '.$this->container['basename']);
         $this->comment('Namespace (auto-generated): '.$this->container['namespace']);
+        $this->comment('Root Namespace (auto-generated): '.$this->container['root']);
 
         if ($this->confirm('If the provided information is correct, type "yes" to generate.')) {
             $this->comment('Thanks! That\'s all we need.');
@@ -177,6 +179,9 @@ class MakeModuleCommand extends Command
                 $subPath = str_replace($search, $replace, $subPath);
             }
 
+            $subPath = $this->replacePlaceholders($subPath);
+
+
             $filePath = $directory.'/'.$subPath;
             $dir = dirname($filePath);
 
@@ -214,17 +219,21 @@ class MakeModuleCommand extends Command
     protected function replacePlaceholders($contents)
     {
         $find = [
+            'DummyRootNamespace',
             'DummyBasename',
             'DummyNamespace',
             'DummyName',
+            'DummyClass',
             'DummySlug',
             'DummyVersion',
             'DummyDescription',
         ];
 
         $replace = [
+            $this->container['root'],
             $this->container['basename'],
             $this->container['namespace'],
+            $this->container['name'],
             $this->container['name'],
             $this->container['slug'],
             $this->container['version'],
