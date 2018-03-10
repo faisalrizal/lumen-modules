@@ -47,6 +47,7 @@ class ModulesServiceProvider extends ServiceProvider
             __DIR__.'/../config/modules.php', 'modules'
         );
 
+        $this->app['api'] = app()->make('Dingo\Api\Routing\Router');
         $this->app->register(ConsoleServiceProvider::class);
         $this->app->register(GeneratorServiceProvider::class);
         $this->app->register(HelperServiceProvider::class);
