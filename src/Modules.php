@@ -4,7 +4,7 @@ namespace Jasahub\Modules;
 
 use Jasahub\Modules\Contracts\Repository;
 use Jasahub\Modules\Exceptions\ModuleNotFoundException;
-use Laravel\Lumen\Application;
+use Illuminate\Container\Container as Application;
 
 class Modules
 {
