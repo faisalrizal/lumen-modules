@@ -69,7 +69,7 @@ class MakeModuleCommand extends Command
     {
         $this->container['slug'] = str_slug($this->argument('slug'));
         $this->container['name'] = studly_case($this->container['slug']);
-        $this->container['version'] = '1.0';
+        $this->container['version'] = 'v1';
         $this->container['description'] = 'This is the description for the '.$this->container['name'].' module.';
 
         if ($this->option('quick')) {
