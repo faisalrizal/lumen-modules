@@ -10,10 +10,10 @@
 | to using a Closure or controller method. Build something great!
 |
 */
-$router->get('/', ['as' => 'users.index', 'uses' => 'DummyNameController@index']);
-$router->get('/', ['as' => 'users.create', 'uses' => 'DummyNameController@create']);
-$router->post('/', ['as' => 'users.store', 'uses' => 'DummyNameController@add']);
-$router->get('/{id}', ['as' => 'users.show', 'uses' => 'DummyNameController@show']);
-$router->get('/{id}', ['as' => 'users.edit', 'uses' => 'DummyNameController@edit']);
-$router->post('/{id}', ['as' => 'users.update', 'uses' => 'DummyNameController@update']);
-$router->get('/{id}', ['as' => 'users.destroy', 'uses' => 'DummyNameController@destroy']);
+$router->get('/', ['as' => 'DummySlug.index', 'uses' => 'DummyNameController@index']);
+$router->get('/{id}', ['as' => 'DummySlug.show', 'uses' => 'DummyNameController@show']);
+$router->get('/create', ['as' => 'DummySlug.create', 'uses' => 'DummyNameController@create']);
+$router->post('/create', ['as' => 'DummySlug.store', 'uses' => 'DummyNameController@add']);
+$router->get('/{id}/update', ['as' => 'DummySlug.edit', 'uses' => 'DummyNameController@edit']);
+$router->post('/{id}/update', ['as' => 'DummySlug.update', 'uses' => 'DummyNameController@update']);
+$router->get('/{id}/delete', ['as' => 'DummySlug.destroy', 'uses' => 'DummyNameController@destroy']);

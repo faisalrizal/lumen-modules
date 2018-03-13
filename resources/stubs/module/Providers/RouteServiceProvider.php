@@ -3,8 +3,9 @@
 namespace DummyNamespace\Providers;
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\ServiceProvider;
 
-class RouteServiceProvider
+class RouteServiceProvider extends ServiceProvider
 {
     /**
      * This namespace is applied to your controller routes.
