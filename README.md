@@ -2,9 +2,9 @@ Clone from Caffeinated Modules
 ===================
 
 # Jasahub Modules
-[![Latest Version](https://img.shields.io/github/release/faisalrizal/lumen-modules.svg?style=flat-square)](https://github.com/faisalrizal/lumen-modules/releases)
+[![Latest Version](https://img.shields.io/github/release/faisalrizal/modules.svg?style=flat-square)](https://github.com/faisalrizal/modules/releases)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
-[![Total Downloads](https://img.shields.io/packagist/dt/faisalrizal/lumen-modules.svg?style=flat-square)](https://packagist.org/packages/faisalrizal/lumen-modules)
+[![Total Downloads](https://img.shields.io/packagist/dt/faisalrizal/modules.svg?style=flat-square)](https://packagist.org/packages/faisalrizal/modules)
 
 Jasahub Modules is a simple package to allow the means to separate your Lumen 5.6 application out into modules. Each module is completely self-contained allowing the ability to simply drop a module in for use.
 
@@ -25,6 +25,7 @@ Once this operation is complete, simply add both the service provider and facade
 ## For Laravel
 
 #### Service Provider
+
 Add the following service provider in `config/app.php`.
 
 ```php
