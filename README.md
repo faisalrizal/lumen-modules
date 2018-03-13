@@ -22,6 +22,31 @@ composer require faisalrizal/modules
 
 Once this operation is complete, simply add both the service provider and facade classes to your project's `bootstrap/app.php` file:
 
+## For Laravel
+
+#### Service Provider
+Add the following service provider in config/app.php.
+
+```php
+'providers' => array(
+  'Jasahub\Modules\ModulesServiceProvider',
+),
+```
+Next, add the following aliases to aliases array in the same file.
+
+```php
+'aliases' => array(
+  'Module' => 'Jasahub\Modules\Facades\Module',
+),
+```
+Next publish the package's configuration file by run :
+
+```php
+php artisan vendor:publish
+```
+
+## For Lumen
+
 #### Service Provider
 
 ```php
