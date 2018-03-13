@@ -4,8 +4,6 @@ Clone from Caffeinated Modules
 # Jasahub Modules
 [![Latest Version](https://img.shields.io/github/release/faisalrizal/lumen-modules.svg?style=flat-square)](https://github.com/faisalrizal/lumen-modules/releases)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
-[![Build Status](https://img.shields.io/travis/faisalrizal/lumen-modules/master.svg?style=flat-square)](https://travis-ci.org/faisalrizal/architect)
-[![Coverage Status](https://img.shields.io/coveralls/faisalrizal/lumen-modules.svg?style=flat-square)](https://coveralls.io/github/faisalrizal/lumen-modules)
 [![Total Downloads](https://img.shields.io/packagist/dt/faisalrizal/lumen-modules.svg?style=flat-square)](https://packagist.org/packages/faisalrizal/lumen-modules)
 
 Jasahub Modules is a simple package to allow the means to separate your Lumen 5.6 application out into modules. Each module is completely self-contained allowing the ability to simply drop a module in for use.
