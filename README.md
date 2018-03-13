@@ -25,14 +25,14 @@ Once this operation is complete, simply add both the service provider and facade
 ## For Laravel
 
 #### Service Provider
-Add the following service provider in config/app.php.
+Add the following service provider in `config/app.php`.
 
 ```php
 'providers' => array(
   'Jasahub\Modules\ModulesServiceProvider',
 ),
 ```
-Next, add the following aliases to aliases array in the same file.
+Next, add the following aliases to `aliases` array in the same file.
 
 ```php
 'aliases' => array(
