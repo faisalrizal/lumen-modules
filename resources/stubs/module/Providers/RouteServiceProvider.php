@@ -51,7 +51,7 @@ class RouteServiceProvider extends ServiceProvider
     {
         global $app;
 
-        $app->router->group(['namespace'  => $this->namespace], function ($router) {
+        $app->router->group(['namespace'  => $this->namespace, 'prefix' => 'DummySlug'], function ($router) {
             require module_path('DummySlug', 'Routes/web.php');
         });
     }
