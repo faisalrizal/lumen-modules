@@ -1,6 +1,6 @@
 {
-  "name": "faisalrizal/lumen-modules",
-  "description": "Lumen Modules",
+  "name": "faisalrizal/modules",
+  "description": "Laravel & Lumen Modules",
   "keywords": ["modules", "laravel", "jasahub"],
   "license": "MIT",
   "authors": [
