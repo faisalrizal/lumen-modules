@@ -4,14 +4,14 @@ namespace Jasahub\Modules\Console\Generators;
 
 use Jasahub\Modules\Console\GeneratorCommand;
 
-class MakeControllerCommand extends GeneratorCommand
+class MakeControllerWebCommand extends GeneratorCommand
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'make:module:controller
+    protected $signature = 'make:module:controller-web
     	{slug : The slug of the module}
     	{name : The name of the controller class}
     	{--resource : Generate a module resource controller class}';
@@ -53,6 +53,6 @@ class MakeControllerCommand extends GeneratorCommand
      */
     protected function getDefaultNamespace($rootNamespace)
     {
-        return module_class($this->argument('slug'), 'Http\\Controllers');
+        return module_class($this->argument('slug'), 'Http\\Controllers\\Web');
     }
 }

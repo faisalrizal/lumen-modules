@@ -1,6 +1,6 @@
 <?php
 
-namespace DummyNamespace\Http\Controllers;
+namespace DummyNamespace\Http\Controllers\Web;
 
 use Illuminate\Http\Request;
 

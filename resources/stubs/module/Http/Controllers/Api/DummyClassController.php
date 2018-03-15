@@ -1,13 +1,13 @@
 <?php
 
-namespace DummyNamespace\Http\Controllers;
+namespace DummyNamespace\Http\Controllers\Api;
 
 use Illuminate\Http\Request;
 
 use DummyRootNamespaceHttp\Requests;
 use DummyRootNamespaceHttp\Controllers\Controller;
 
-class ApiDummyClassController extends Controller
+class DummyClassController extends Controller
 {
     /**
      * Display a listing of the resource.

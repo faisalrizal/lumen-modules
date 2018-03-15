@@ -21,7 +21,8 @@ class GeneratorServiceProvider extends ServiceProvider
     {
         $generators = [
             'command.make.module'               => \Jasahub\Modules\Console\Generators\MakeModuleCommand::class,
-            'command.make.module.controller'    => \Jasahub\Modules\Console\Generators\MakeControllerCommand::class,
+            'command.make.module.controller-web'    => \Jasahub\Modules\Console\Generators\MakeControllerWebCommand::class,
+            'command.make.module.controller-api'    => \Jasahub\Modules\Console\Generators\MakeControllerApiCommand::class,
             'command.make.module.middleware'    => \Jasahub\Modules\Console\Generators\MakeMiddlewareCommand::class,
             'command.make.module.migration'     => \Jasahub\Modules\Console\Generators\MakeMigrationCommand::class,
             'command.make.module.model'         => \Jasahub\Modules\Console\Generators\MakeModelCommand::class,
