@@ -10,8 +10,10 @@
 | to using a Closure or controller method. Build something great!
 |
 */
-$api->get('/', ['as' => 'api.DummySlug.all', 'uses' => 'ApiDummyNameController@all']);
-$api->get('/{id}', ['as' => 'api.DummySlug.get', 'uses' => 'ApiDummyNameController@get']);
-$api->post('/', ['as' => 'api.DummySlug.add', 'uses' => 'ApiDummyNameController@add']);
-$api->put('/{id}', ['as' => 'api.DummySlug.put', 'uses' => 'ApiDummyNameController@put']);
-$api->delete('/{id}', ['as' => 'api.DummySlug.del', 'uses' => 'ApiDummyNameController@del']);
+$api->group(['middleware' => 'api.auth'], function($api) { 
+	$api->get('/', ['as' => 'api.DummySlug.all', 'uses' => 'DummyNameController@all']);
+	$api->get('/{id}', ['as' => 'api.DummySlug.get', 'uses' => 'DummyNameController@get']);
+	$api->post('/', ['as' => 'api.DummySlug.add', 'uses' => 'DummyNameController@add']);
+	$api->put('/{id}', ['as' => 'api.DummySlug.put', 'uses' => 'DummyNameController@put']);
+	$api->delete('/{id}', ['as' => 'api.DummySlug.del', 'uses' => 'DummyNameController@del']);
+});
