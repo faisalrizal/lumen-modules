@@ -3,7 +3,7 @@
 namespace DummyNamespace\Events;
 
 use DummyRootNamespaceEvents\Event;
-use DummyRootNamespaceModules\DummyBasename\Models\DummyClass;
+use DummyNamespace\Models\DummyClass;
 
 class DummyClassWasDeleted extends Event
 {

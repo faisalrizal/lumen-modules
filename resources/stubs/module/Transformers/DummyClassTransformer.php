@@ -3,7 +3,7 @@
 namespace DummyNamespace\Transformers;
 
 use League\Fractal\TransformerAbstract;
-use DummyRootNamespaceModules\DummyBasename\Models\DummyClass;
+use DummyNamespace\Models\DummyClass;
 
 class DummyClassTransformer extends TransformerAbstract
 {
