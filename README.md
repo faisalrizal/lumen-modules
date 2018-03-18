@@ -29,16 +29,16 @@ Once this operation is complete, simply add both the service provider and facade
 Add the following service provider in `config/app.php`.
 
 ```php
-'providers' => array(
-  'Jasahub\Modules\ModulesServiceProvider',
-),
+'providers' => [
+  Jasahub\Modules\ModulesServiceProvider::class,
+],
 ```
 Next, add the following aliases to `aliases` array in the same file.
 
 ```php
-'aliases' => array(
-  'Module' => 'Jasahub\Modules\Facades\Module',
-),
+'aliases' => [
+  'Module' => Jasahub\Modules\Facades\Module::class,
+],
 ```
 Next publish the package's configuration file by run :
 
