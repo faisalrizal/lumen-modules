@@ -4,7 +4,3 @@ install:
 php:
   - 7.1
   - hhvm
-
-script:
-  - mkdir -p build/logs
-  - php vendor/bin/phpunit -c phpunit.xml
