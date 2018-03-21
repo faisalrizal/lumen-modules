@@ -60,7 +60,7 @@ class DummyClassController extends Controller
      */
     public function show($id)
     {
-        $DummySlug = $this->DummySlugRepository->get($id);
+        $DummySlug = $this->DummySlugRepository->find($id);
     
         return view("DummySlug::show", compact("DummySlug"));        
     }

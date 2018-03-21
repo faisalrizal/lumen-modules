@@ -46,7 +46,7 @@ class DummyClassController extends Controller
      */
     public function get($id)
     {
-        $DummySlug = $this->DummySlugRepository->get($id);
+        $DummySlug = $this->DummySlugRepository->find($id);
 
         $DummySlug = $this->response->item($DummySlug, $this->DummySlugTransformer, ['key' => 'DummySlug']);
 
