@@ -15,4 +15,18 @@ class DummyClass extends Model
      * @var array
      */
     protected $dates = ['deleted_at'];
+
+    public static function rules_create()
+    {
+        return [
+        	//
+        ];
+    } 
+
+    public static function rules_update()
+    {
+        return [
+			//
+        ];
+    } 
 }

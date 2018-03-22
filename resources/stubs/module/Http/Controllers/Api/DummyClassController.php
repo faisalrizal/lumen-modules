@@ -61,6 +61,8 @@ class DummyClassController extends Controller
      */
     public function add(Request $request)
     {
+        $this->validate($request, $this->DummySlugRepository->ruleCreate());
+
         $DummySlug = $this->DummySlugRepository->create($request->all());
 
         return $this->response->created(url('DummySlug/'.$DummySlug->id));
@@ -75,6 +77,8 @@ class DummyClassController extends Controller
      */
     public function put($id, Request $request)
     {
+        $this->validate($request, $this->DummySlugRepository->ruleUpdate());
+
         $DummySlug = $this->DummySlugRepository->update($id, $request->all());
 
         return $this->response->accepted(url('DummySlug/'.$DummySlug->id));
