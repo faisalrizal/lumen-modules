@@ -47,6 +47,8 @@ class DummyClassController extends Controller
      */
     public function store(Request $request)
     {
+        $this->validate($request, $this->DummySlugRepository->ruleCreate());
+
         $DummySlug = $this->DummySlugRepository->create($request->all());
 
         return redirect()->route("DummySlug.create");
@@ -87,6 +89,8 @@ class DummyClassController extends Controller
      */
     public function update($id, Request $request)
     {
+        $this->validate($request, $this->DummySlugRepository->ruleUpdate());
+
         $DummySlug = $this->DummySlugRepository->update($id, $request->all());
 
         return redirect()->route("DummySlug.edit", $id);

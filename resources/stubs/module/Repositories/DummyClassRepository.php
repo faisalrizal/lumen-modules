@@ -6,7 +6,6 @@ use DummyNamespace\Models\DummyClass;
 use DummyNamespace\Events\DummyClassWasCreated;
 use DummyNamespace\Events\DummyClassWasUpdated;
 use DummyNamespace\Events\DummyClassWasDeleted;
-use Illuminate\Http\Request;
 
 class DummyClassRepository
 {
@@ -27,13 +26,11 @@ class DummyClassRepository
 
 	public function ruleCreate()
 	{
-		return $this->model()->rules_create;
+		return $this->model()->rules_create();
 	}
 
-	public function create(Request $request)
+	public function create($request)
 	{
-		$this->validate($request, $this->ruleCreate());
-
 		$DummySlug = $this->model();
 
 		$DummySlug->fill($request);
@@ -46,13 +43,11 @@ class DummyClassRepository
 
 	public function ruleUpdate()
 	{
-		return $this->model()->rules_update;
+		return $this->model()->rules_update();
 	}
 
-	public function update($id, Request $request)
+	public function update($id, $request)
 	{
-		$this->validate($request, $this->ruleUpdate());
-
 		$DummySlug = $this->model()->findOrfail($id);
 
 		$DummySlug->fill($request);

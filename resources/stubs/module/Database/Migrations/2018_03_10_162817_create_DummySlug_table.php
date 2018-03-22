@@ -13,7 +13,7 @@ class CreateDummyClassTable extends Migration
      */
     public function up()
     {
-        Schema::create('DummySlug', function (Blueprint $table) {
+        Schema::create('DummySlugs', function (Blueprint $table) {
             $table->increments('id');
 
             /* place your other migration properties here */
