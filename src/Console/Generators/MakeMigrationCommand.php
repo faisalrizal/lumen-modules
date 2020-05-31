@@ -1,6 +1,6 @@
 <?php
 
-namespace Jasahub\Modules\Console\Generators;
+namespace Tokolabs\Modules\Console\Generators;
 
 use Illuminate\Console\Command;
 

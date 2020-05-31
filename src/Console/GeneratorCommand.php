@@ -1,6 +1,6 @@
 <?php
 
-namespace Jasahub\Modules\Console;
+namespace Tokolabs\Modules\Console;
 
 use Illuminate\Console\GeneratorCommand as LaravelGeneratorCommand;
 use Illuminate\Support\Str;

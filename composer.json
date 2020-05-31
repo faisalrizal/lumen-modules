@@ -1,11 +1,11 @@
 {
   "name": "faisalrizal/modules",
   "description": "Laravel & Lumen Modules",
-  "keywords": ["modules", "laravel", "jasahub"],
+  "keywords": ["modules", "laravel", "tokolabs"],
   "license": "MIT",
   "authors": [
     {
-      "name": "Faisal Rizal",
+      "name": "Ahmad Faisal Rizal",
       "email": "faisalrizal@gmail.com"
     }
   ],
@@ -16,7 +16,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Jasahub\\Modules\\": "src/"
+      "Tokolabs\\Modules\\": "src/"
     }
   },
   "extra": {
@@ -25,10 +25,10 @@
     },
     "laravel": {
       "providers": [
-        "Jasahub\\Modules\\ModulesServiceProvider"
+        "Tokolabs\\Modules\\ModulesServiceProvider"
       ],
       "aliases": {
-        "Module": "Jasahub\\Modules\\Facades\\Module"
+        "Module": "Tokolabs\\Modules\\Facades\\Module"
       }
     }
   },

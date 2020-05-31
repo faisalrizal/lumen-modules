@@ -1,13 +1,13 @@
 <?php
 
-namespace Jasahub\Modules;
+namespace Tokolabs\Modules;
 
-use Jasahub\Modules\Contracts\Repository;
-use Jasahub\Modules\Providers\BladeServiceProvider;
-use Jasahub\Modules\Providers\ConsoleServiceProvider;
-use Jasahub\Modules\Providers\GeneratorServiceProvider;
-use Jasahub\Modules\Providers\HelperServiceProvider;
-use Jasahub\Modules\Providers\RepositoryServiceProvider;
+use Tokolabs\Modules\Contracts\Repository;
+use Tokolabs\Modules\Providers\BladeServiceProvider;
+use Tokolabs\Modules\Providers\ConsoleServiceProvider;
+use Tokolabs\Modules\Providers\GeneratorServiceProvider;
+use Tokolabs\Modules\Providers\HelperServiceProvider;
+use Tokolabs\Modules\Providers\RepositoryServiceProvider;
 use Illuminate\Support\ServiceProvider;
 
 class ModulesServiceProvider extends ServiceProvider

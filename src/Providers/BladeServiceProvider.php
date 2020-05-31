@@ -1,6 +1,6 @@
 <?php
 
-namespace Jasahub\Modules\Providers;
+namespace Tokolabs\Modules\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\View\Compilers\BladeCompiler;

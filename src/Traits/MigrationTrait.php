@@ -1,6 +1,6 @@
 <?php
 
-namespace Jasahub\Modules\Traits;
+namespace Tokolabs\Modules\Traits;
 
 trait MigrationTrait
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Jasahub\Modules\Console\Commands;
+namespace Tokolabs\Modules\Console\Commands;
 
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputArgument;

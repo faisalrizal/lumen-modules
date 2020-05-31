@@ -1,6 +1,6 @@
 <?php
 
-namespace Jasahub\Modules\Support;
+namespace Tokolabs\Modules\Support;
 
 use Illuminate\Support\ServiceProvider as IlluminateServiceProvider;
 

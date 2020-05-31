@@ -1,8 +1,8 @@
 <?php
 
-namespace Jasahub\Modules\Console\Commands;
+namespace Tokolabs\Modules\Console\Commands;
 
-use Jasahub\Modules\Modules;
+use Tokolabs\Modules\Modules;
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;

@@ -1,8 +1,8 @@
 <?php
 
-namespace Jasahub\Modules\Console\Generators;
+namespace Tokolabs\Modules\Console\Generators;
 
-use Jasahub\Modules\Console\GeneratorCommand;
+use Tokolabs\Modules\Console\GeneratorCommand;
 
 class MakeProviderCommand extends GeneratorCommand
 {

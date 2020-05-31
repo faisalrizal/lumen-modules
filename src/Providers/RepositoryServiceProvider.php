@@ -1,6 +1,6 @@
 <?php
 
-namespace Jasahub\Modules\Providers;
+namespace Tokolabs\Modules\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -24,9 +24,9 @@ class RepositoryServiceProvider extends ServiceProvider
         if ($driver == 'Custom') {
             $namespace = config('modules.custom_driver');
         } else {
-            $namespace = 'Jasahub\Modules\Repositories\\'.$driver.'Repository';
+            $namespace = 'Tokolabs\Modules\Repositories\\'.$driver.'Repository';
         }
 
-        $this->app->bind('Jasahub\Modules\Contracts\Repository', $namespace);
+        $this->app->bind('Tokolabs\Modules\Contracts\Repository', $namespace);
     }
 }

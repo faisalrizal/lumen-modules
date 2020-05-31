@@ -1,12 +1,12 @@
 Clone from Caffeinated Modules
 ===================
 
-# Jasahub Modules
+# Tokolabs Modules
 [![Latest Version](https://img.shields.io/github/release/faisalrizal/modules.svg?style=flat-square)](https://github.com/faisalrizal/modules/releases)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
 [![Total Downloads](https://img.shields.io/packagist/dt/faisalrizal/modules.svg?style=flat-square)](https://packagist.org/packages/faisalrizal/modules)
 
-Jasahub Modules is a simple package to allow the means to separate your Lumen 5.6 application out into modules. Each module is completely self-contained allowing the ability to simply drop a module in for use.
+Tokolabs Modules is a simple package to allow the means to separate your Lumen 5.6 application out into modules. Each module is completely self-contained allowing the ability to simply drop a module in for use.
 
 The package follows the FIG standards PSR-1, PSR-2, and PSR-4 to ensure a high level of interoperability between shared PHP code.
 
@@ -30,14 +30,14 @@ Add the following service provider in `config/app.php`.
 
 ```php
 'providers' => [
-  Jasahub\Modules\ModulesServiceProvider::class,
+  Tokolabs\Modules\ModulesServiceProvider::class,
 ],
 ```
 Next, add the following aliases to `aliases` array in the same file.
 
 ```php
 'aliases' => [
-  'Module' => Jasahub\Modules\Facades\Module::class,
+  'Module' => Tokolabs\Modules\Facades\Module::class,
 ],
 ```
 Next publish the package's configuration file by run :
@@ -51,14 +51,14 @@ php artisan vendor:publish
 #### Service Provider
 
 ```php
-$app->register(Jasahub\Modules\ModulesServiceProvider::class);
+$app->register(Tokolabs\Modules\ModulesServiceProvider::class);
 ```
 
 #### Facade
 
 ```php
 
-$app->withFacades(true, [Jasahub\Modules\Facades\Module::class => 'Module']);
+$app->withFacades(true, [Tokolabs\Modules\Facades\Module::class => 'Module']);
 ```
 
 And that's it! With your coffee in reach, start building out some awesome modules!

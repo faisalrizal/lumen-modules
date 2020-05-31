@@ -1,8 +1,8 @@
 <?php
 
-namespace Jasahub\Modules\Console\Generators;
+namespace Tokolabs\Modules\Console\Generators;
 
-use Jasahub\Modules\Modules;
+use Tokolabs\Modules\Modules;
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
 use Symfony\Component\Console\Helper\ProgressBar;
@@ -23,7 +23,7 @@ class MakeModuleCommand extends Command
      *
      * @var string
      */
-    protected $description = 'Create a new Jasahub module and bootstrap it';
+    protected $description = 'Create a new Tokolabs module and bootstrap it';
 
     /**
      * The modules instance.

@@ -1,6 +1,6 @@
 <?php
 
-namespace Jasahub\Modules\Contracts;
+namespace Tokolabs\Modules\Contracts;
 
 interface Repository
 {

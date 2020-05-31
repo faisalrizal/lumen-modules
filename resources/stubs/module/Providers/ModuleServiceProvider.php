@@ -2,7 +2,7 @@
 
 namespace DummyNamespace\Providers;
 
-use Jasahub\Modules\Support\ServiceProvider;
+use Tokolabs\Modules\Support\ServiceProvider;
 
 class ModuleServiceProvider extends ServiceProvider
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Jasahub\Modules\Facades;
+namespace Tokolabs\Modules\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

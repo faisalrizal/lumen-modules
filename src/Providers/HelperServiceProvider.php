@@ -1,6 +1,6 @@
 <?php
 
-namespace Jasahub\Modules\Providers;
+namespace Tokolabs\Modules\Providers;
 
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\ServiceProvider;

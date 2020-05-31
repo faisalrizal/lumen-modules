@@ -1,9 +1,9 @@
 <?php
 
-namespace Jasahub\Modules\Repositories;
+namespace Tokolabs\Modules\Repositories;
 
 use Exception;
-use Jasahub\Modules\Contracts\Repository as RepositoryContract;
+use Tokolabs\Modules\Contracts\Repository as RepositoryContract;
 use Illuminate\Config\Repository as Config;
 use Illuminate\Filesystem\Filesystem;
 

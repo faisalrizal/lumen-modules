@@ -1,6 +1,6 @@
 <?php
 
-namespace Jasahub\Modules\Repositories;
+namespace Tokolabs\Modules\Repositories;
 
 class LocalRepository extends Repository
 {

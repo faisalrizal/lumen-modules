@@ -1,9 +1,9 @@
 <?php
 
-namespace Jasahub\Modules;
+namespace Tokolabs\Modules;
 
-use Jasahub\Modules\Contracts\Repository;
-use Jasahub\Modules\Exceptions\ModuleNotFoundException;
+use Tokolabs\Modules\Contracts\Repository;
+use Tokolabs\Modules\Exceptions\ModuleNotFoundException;
 use Illuminate\Container\Container as Application;
 
 class Modules

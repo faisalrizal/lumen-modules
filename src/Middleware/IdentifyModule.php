@@ -1,21 +1,21 @@
 <?php
 
-namespace Jasahub\Modules\Middleware;
+namespace Tokolabs\Modules\Middleware;
 
-use Jasahub\Modules\Modules;
+use Tokolabs\Modules\Modules;
 use Closure;
 
 class IdentifyModule
 {
     /**
-     * @var Jasahub\Modules
+     * @var Tokolabs\Modules
      */
     protected $module;
 
     /**
      * Create a new IdentifyModule instance.
      *
-     * @param Jasahub\Modules $module
+     * @param Tokolabs\Modules $module
      */
     public function __construct(Modules $module)
     {

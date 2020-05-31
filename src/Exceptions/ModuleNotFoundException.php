@@ -5,7 +5,7 @@
  * Time: 5:27 PM
  */
 
-namespace Jasahub\Modules\Exceptions;
+namespace Tokolabs\Modules\Exceptions;
 
 
 class ModuleNotFoundException extends \Exception {
