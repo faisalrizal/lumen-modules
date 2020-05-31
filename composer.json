@@ -12,7 +12,8 @@
   "require": {
     "php": "^7.2.0",
     "league/fractal": "^0.19",
-    "dingo/api": "^3.0.0"
+    "dingo/api": "^3.0.0",
+    "illuminate/support": "^6.0|^7.0"
   },
   "autoload": {
     "psr-4": {
