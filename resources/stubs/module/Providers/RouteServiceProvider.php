@@ -52,7 +52,7 @@ class RouteServiceProvider extends ServiceProvider
     {
         global $app;
 
-        $app->router->group(['namespace'  => $this->namespace_web, 'prefix' => 'DummySlug'], function ($router) {
+        $app->router->group(['namespace'  => $this->namespace_web], function ($router) {
             require module_path('DummySlug', 'Routes/web.php');
         });
     }
@@ -69,7 +69,7 @@ class RouteServiceProvider extends ServiceProvider
         global $app;
 
         $app->api->version('DummyVersion', function ($api) {
-            $api->group(['namespace'  => $this->namespace_api, 'prefix' => 'DummySlug'], function ($api) {
+            $api->group(['namespace'  => $this->namespace_api], function ($api) {
                 require module_path('DummySlug', 'Routes/api.php');
             });
         });

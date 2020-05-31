@@ -10,7 +10,7 @@
 | to using a Closure or controller method. Build something great!
 |
 */
-$api->group(['middleware' => 'api.auth'], function($api) { 
+$api->group(['prefix' => 'DummySlug', 'middleware' => 'api.auth'], function($api) { 
 	$api->get('/', ['as' => 'api.DummySlug.all', 'uses' => 'DummyNameController@all']);
 	$api->get('/{id}', ['as' => 'api.DummySlug.get', 'uses' => 'DummyNameController@get']);
 	$api->post('/', ['as' => 'api.DummySlug.add', 'uses' => 'DummyNameController@add']);

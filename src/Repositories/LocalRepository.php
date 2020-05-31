@@ -2,6 +2,8 @@
 
 namespace Tokolabs\Modules\Repositories;
 
+use Illuminate\Support\Str;
+
 class LocalRepository extends Repository
 {
     /**
@@ -80,7 +82,7 @@ class LocalRepository extends Repository
      */
     public function exists($slug)
     {
-        return $this->slugs()->contains(str_slug($slug));
+        return $this->slugs()->contains(Str::slug($slug));
     }
 
     /**

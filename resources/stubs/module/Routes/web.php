@@ -10,7 +10,7 @@
 | to using a Closure or controller method. Build something great!
 |
 */
-$router->group(['middleware' => 'auth'], function($router) { 
+$router->group(['prefix' => 'DummySlug', 'middleware' => 'auth'], function($router) { 
 	$router->get('/all', ['as' => 'DummySlug.index', 'uses' => 'DummyNameController@index']);
 	$router->get('/{id}/show', ['as' => 'DummySlug.show', 'uses' => 'DummyNameController@show']);
 	$router->get('/create', ['as' => 'DummySlug.create', 'uses' => 'DummyNameController@create']);
