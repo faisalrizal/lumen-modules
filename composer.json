@@ -1,7 +1,7 @@
 {
   "name": "faisalrizal/modules",
   "description": "Laravel & Lumen Modules",
-  "keywords": ["modules", "laravel", "tokolabs"],
+  "keywords": ["modules", "laravel", "lumen", "tokolabs"],
   "license": "MIT",
   "authors": [
     {
@@ -10,9 +10,7 @@
     }
   ],
   "require": {
-    "php": "^7.2.0",
-    "league/fractal": "^0.19",
-    "dingo/api": "^3.0.0",
+    "php": "^7.2",
     "illuminate/support": "^6.0|^7.0"
   },
   "autoload": {
