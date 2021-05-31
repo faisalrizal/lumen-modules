@@ -1,5 +1,6 @@
 <?php
 
+use Tokolabs\Modules\Facades\Module;
 use Tokolabs\Modules\Exceptions\ModuleNotFoundException;
 
 if (!function_exists('module_path')) {
